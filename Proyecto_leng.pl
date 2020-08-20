@@ -155,6 +155,17 @@ estudiante(2000100070, 0, [hist301]).
 estudiante(2000100071, 1, [math101,hist301]).
 estudiante(2000100072, 0, [ux101, phys201]).
 
+%fecha examenes 8
+
+fechaexam(cmpe150, ['15.04.2018', '25.05.2018', '04.06.2018']).
+fechaexam(math101, ['17.04.2018', '15.05.2018', '04.06.2018']).
+fechaexam(phys201, ['15.04.2018', '19.05.2018', '05.06.2018']).
+fechaexam(ec201, ['16.04.2018', '20.05.2018', '02.06.2018']).
+fechaexam(hist301, ['14.04.2018', '21.05.2018', '01.06.2018']).
+fechaexam(math201, ['16.04.2020', '20.05.2020', '02.06.2020']).
+fechaexam(ux101, ['14.04.2019', '21.05.2019', '01.06.2019']).
+fechaexam(phys202, ['16.04.2021', '20.05.2021', '02.06.2021']).
+
 %PARTE1  lista_estudiantes
 lista_estudiantes(S,L) :-setof(M,find(M,S),L).
 find(M,none) :-estudiante(M,_,[]).       
