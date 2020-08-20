@@ -78,9 +78,9 @@ estudiante(2000100025, 0, [hist301]).
 estudiante(2000100026, 1, [ec201,math101,cmpe150]).
 
 %PARTE1  lista_estudiantes
-lista_estudiantes(L,Sp) :-setof(St,find(St,Sp),L).
-find(St,none) :-estudiante(St,_,[]).       
-find(St,Sp) :-estudiante(St,_,L),member(Sp,L).
+lista_estudiantes(S,L) :-setof(M,find(M,S),L).
+find(M,none) :-estudiante(M,_,[]).       
+find(M,S) :-estudiante(M,_,L),member(S,L).
 
 
 
