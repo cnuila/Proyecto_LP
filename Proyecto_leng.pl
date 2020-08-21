@@ -234,6 +234,20 @@ lista_estudiantes(S,L) :-setof(M,find(M,S),L).
 find(M,none) :-estudiante(M,_,[]).       
 find(M,S) :-estudiante(M,_,L),member(S,L).
 
+%PASO2 Inciso 2
+
+lista_fechas(ID,L):- estudiante(ID,_,L2), recorrerCursos(L2,L).
+
+recorrerCursos([],[]).
+recorrerCursos([X|Y],[W|Z]):- 
+    fechas(X,W), recorrerCursos(Y,Z).
+
+fechas(X,L):- fechaexam(X,L3), agregarLista(L3,L).
+
+agregarLista([],[]).
+agregarLista([X|Y],[W|Z]):-
+    W = X, agregarLista(Y,Z).
+
 
 
 
