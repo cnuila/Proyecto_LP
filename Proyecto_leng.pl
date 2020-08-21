@@ -249,9 +249,19 @@ agregarLista([X|Y],[W|Z]):-
     W = X, agregarLista(Y,Z).
 
 
+%PASO3 Inciso 3
 
+zurdos(S,L):-setof(M,find2(M,S),L).
+find2(M,none):-estudiante(M,_,[]).
+find2(M,S):-estudiante(M,0,L),member(S,L).
 
+len([],0).
+len([_|Xs],L):- len(Xs,L2),L is L2+1.
 
+agregarLista([X],IDA):- X=IDA.
+
+aula_adecuadas(IDC,L):- zurdos(IDC,L2), len(L2,N),  aula(IDA,_,S), encontrarAdecuadas(IDA,N,S,L).
+encontrarAdecuadas(IDA,N,S,L):- (S >= N) -> agregarLista(L,IDA) .
 
 
 
