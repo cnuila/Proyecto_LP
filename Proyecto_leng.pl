@@ -155,6 +155,69 @@ estudiante(2000100070, 0, [hist301]).
 estudiante(2000100071, 1, [math101,hist301]).
 estudiante(2000100072, 0, [ux101, phys201]).
 
+%mas estudiantes 58
+estudiante(2000100001, 1, [math101,phys201,hist301]) .
+estudiante(2100100001, 0, [phys201,ec201,cmpe150]) .
+estudiante(2200100001, 1, [ec201,hist301]) .
+estudiante(2300100001, 0, [math101,cmpe150]) .
+estudiante(2400100001, 1, [hist301,cmpe150]) .
+estudiante(2500100001, 0, [phys201]) .
+estudiante(2600100001, 1, [math101,hist301]) .
+estudiante(2700100001, 0, [ec201,cmpe150]) .
+estudiante(2800100001, 1, [hist301]) .
+estudiante(2900100001, 0, [math101, phys201]) .
+estudiante(2010100001, 1, [ec201,hist301]) .
+estudiante(2020100001, 0, [math101,cmpe150]) .
+estudiante(2030100001, 1, []) .
+estudiante(2040100001, 0, [phys201,hist301]) .
+estudiante(2050100001, 1, [math101, ec201,cmpe150]) .
+estudiante(2000101001, 1, [math201,ux101,cmpe150]) .
+estudiante(2000102001, 1, [math101,ec201]) .
+estudiante(2000103001, 1, [math201,phys201,ux101]) .
+
+estudiante(2000104001, 0, [phys202,hist301,cmpe150]) .
+estudiante(2000105001, 0, [hist301,ux101]) .
+estudiante(2000106001, 0, [math201,phys202,hist301]) .
+estudiante(2000107001, 1, [math201,phys201]) .
+estudiante(2000108001, 0, [phys202,hist301]) .
+estudiante(2000109001, 0, [math101,ux101,cmpe150]) .
+estudiante(2000100101, 1, [hist301,ec201]) .
+estudiante(2000101201, 0, [math101,hist301]) .
+estudiante(2000101231, 1, [phys201,ux101,ec201]) .
+estudiante(2000100131, 1, [math201,cmpe150]) .
+
+estudiante(2000114001, 1, [phys201,ec201]) .
+estudiante(2001153001, 0, [phys202,cmpe150]) .
+estudiante(2000103501, 1, [math201,phys202,hist301]) .
+estudiante(2000103601, 0, [phys201,ux101,cmpe150]) .
+estudiante(2000103701, 1, [phys202,hist301]) .
+estudiante(2000103801, 1, [math101,phys201,hist301]) .
+estudiante(2000103901, 1, [phys201,ux101]) .
+estudiante(2000104001, 0, [phys201,hist301,ec201]) .
+estudiante(2000104101, 1, [phys202,ux101]) .
+estudiante(2000104201, 0, [phys202,ux101,cmpe150]) .
+
+estudiante(2000111101, 0, [hist301,ux101]) .
+estudiante(2000112301, 0, [math101,phys201,hist301]) .
+estudiante(2000113001, 0, [phys201,ux101,ec201]) .
+estudiante(2000105601, 0, [math201,hist301]) .
+estudiante(2000105701, 1, [math201,ux101,cmpe150]) .
+estudiante(2000105801, 0, [phys201,ec201]) .
+estudiante(2000105901, 0, [math201,phys201,hist301]) .
+estudiante(2000106601, 1, [math101,hist301,ux101]) .
+estudiante(2000106701, 1, [hist301]) .
+estudiante(2000106801, 0, [math201,hist301]) .
+
+estudiante(2134100001, 0, [hist301]) .
+estudiante(2524100001, 0, [hist301]) .
+estudiante(2983100001, 1, [phys202,hist301]) .
+estudiante(2874100001, 0, [math201,phys201,hist301]) .
+estudiante(2672100001, 1, [math101,phys201,hist301]) .
+estudiante(2222100001, 1, [hist301]) .
+estudiante(2331100001, 0, [phys201,hist301]) .
+estudiante(2937700001, 0, [phys202]) .
+estudiante(2988100001, 1, [hist301,ux101,ec201]) .
+estudiante(2696916901, 0, [math201,phys202,cmpe150]) .
 %fecha examenes 8
 
 fechaexam(cmpe150, ['15.04.2018', '25.05.2018', '04.06.2018']).
