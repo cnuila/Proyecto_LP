@@ -258,10 +258,9 @@ find2(M,S):-estudiante(M,0,L),member(S,L).
 len([],0).
 len([_|Xs],L):- len(Xs,L2),L is L2+1.
 
-agregarLista([X],IDA):- X=IDA.
+aulas(L,N):- findall(X,(aula(X,_,Z),Z>=N),L).
 
-aula_adecuadas(IDC,L):- zurdos(IDC,L2), len(L2,N),  aula(IDA,_,S), encontrarAdecuadas(IDA,N,S,L).
-encontrarAdecuadas(IDA,N,S,L):- (S >= N) -> agregarLista(L,IDA) .
+aula_adecuadas(IDC,L):- zurdos(IDC,L2), len(L2,N), aulas(L,N).
 
 
 
